@@ -13,12 +13,13 @@ body {
 
 .navbar {
   height: 60px;
-  width: 100%;
-  background-color: #333;
+  width: 1300px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  margin-top: 20px;
 }
 
 .navbar-brand a {
@@ -29,20 +30,30 @@ body {
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
   letter-spacing: 3px;
-  color: #fff;
-}
-
-.nav-link {
-  padding-right: 120px;
+  color: rgb(185, 8, 255);
+  margin-left: 50px;
 }
 .nav-link a{
-  color: #fff;
+  color: #333;
   text-decoration: none;
   padding: 0 15px;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.nav-link a:nth-child(2) {
+ display: inline-block;
+ background-color: red;
+ padding: 8px 12px;
+ border-radius: 8px;
+ color: #fff;
 }
 
 .nav-link a:hover {
-  color: blanchedalmond;
+  color: rgb(252, 199, 120);
   transition: 0.3s;
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
 }

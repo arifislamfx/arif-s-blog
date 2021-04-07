@@ -11,7 +11,8 @@ const Navbar = () => {
                     </div>
                     <div className="nav-link">
                         <a href="/">Home</a>
-                        <a href="/create">New Blog</a>
+                        <a href="/create"> <i class="fas fa-plus"></i> New Blog</a>
+                        <a href="/contact">Contact</a>
                     </div>
                 </div>
             </nav>

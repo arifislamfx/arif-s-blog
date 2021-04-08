@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "My First Blog",
+            "body": "Hello there, This is my first blog in this website. Hopefully you guys enjoy this blog post.",
+            "author": "ariful islam",
+            "id": "1"
+        },
+        {
+            "title": "How to make money in online",
+            "body": "Hello learners, Today i will share how to make money in online with very simple way",
+            "author": "sumi islam",
+            "id": "2"
+        }
+    ]
+}

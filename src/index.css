@@ -54,6 +54,26 @@ body {
 }
 
 .content {
-  text-align: center;
+  margin-left: 150px;
   margin-top: 50px;
+}
+
+.blog__preview {
+  margin: 20px 0;
+  padding: 10px 16px;
+  border-bottom: 1px solid #fafafa;
+  max-width: 400px;
+}
+.blog__preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog__preview h2 {
+  font-size: 20px; 
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.delete {
+  padding: 8px 15px;
+  margin: 10px 0;
 }

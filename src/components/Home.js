@@ -1,33 +1,30 @@
 import { useState } from "react";
+import BlogList from "./BlogList";
 
 
 const Home = () => {
+  
+ const [blogs, setBlogs] = useState([
+     {title: 'My new website', body: 'This is my brand new website', author: 'Ariful islam', id: 1},
+     {title: 'My Hobby', body: 'Coding is my passion', author: 'Ariful islam', id: 2},
+     {title: 'My new house', body: 'This is my brand new house', author: 'Sumi islam', id: 3},
+     {title: 'My new laptop', body: 'This is my brand new laptop', author: 'Aysha', id: 4},
+     {title: 'My new Mobile', body: 'This is my brand new mobile', author: 'Aysha', id: 5}
+ ]);
 
-    const btnHandlar = (e) => {
-        console.log("btn clicked", e);
-    }
-
-    const clickHere = (name, e) => {
-        console.log("Hello",  name, e.target);
-    }
-
-    const [name, setName] = useState("Sumi");
-    const [age, setAge] = useState(18);
-
-    const changeName = () => {
-        setName("sumi islam");
-        setAge(20);
-    }
+ const handleDelete = (id) => {
+     const deleteBlog = blogs.filter(blog => blog.id !== id);
+     setBlogs(deleteBlog);
+ }
+    
 
     return (
         <div>
             <div className="home">
-                <h1>This is Home Page</h1>
-                <button onClick={btnHandlar}>Click me</button> <br/> <br/>
-                <button onClick={(e) => clickHere("Arif", e)} >click here</button> <br/> <br/>
+              <BlogList blogs={blogs} title = "All Blog Here" handleDelete={handleDelete} />
 
-                <p> {name} is {age} years old. </p> <br/>
-                <button onClick={changeName}>Change Name</button>
+              {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'Ariful islam')} title = "Ariful's Blog Here" handleDelete={handleDelete} />
+              <BlogList blogs={blogs.filter((blog) => blog.author === 'Aysha')} title = "Aysha's Blog" handleDelete={handleDelete} /> */}
             </div>
         </div>
     )

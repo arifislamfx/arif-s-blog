@@ -1,7 +1,6 @@
 
+const BlogList = ({ blogs, title}) => { 
 
-const BlogList = ({ blogs, title, handleDelete}) => { 
-    
     return (
         <div>
             <h1> {title} </h1> 
@@ -10,7 +9,6 @@ const BlogList = ({ blogs, title, handleDelete}) => {
                     <div className="blog__preview" key={blog.id}>
                         <h2> {blog.title} </h2>
                         <p> Writen by { blog.author } </p>
-                       <button className="delete" onClick={() => handleDelete(blog.id)}>delete</button>
                     </div>
                 ))
             }
@@ -19,3 +17,5 @@ const BlogList = ({ blogs, title, handleDelete}) => {
 }
 
 export default BlogList
+
+{/* <button className="delete" onClick={() => handleDelete(blog.id)}>delete</button>  */}

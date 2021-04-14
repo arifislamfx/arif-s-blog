@@ -31,7 +31,7 @@ const UseFetch = (url) => {
                     setError(err.message);
                     setPanding(false)
                 }
-            })      
+            })
            return () => abortCont.abort();
     },[url]);
 

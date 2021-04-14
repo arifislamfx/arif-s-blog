@@ -73,7 +73,93 @@ body {
   margin-bottom: 8px;
 }
 
-.delete {
-  padding: 8px 15px;
+.blog__preview a {
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog__details h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+ 
+.blog__details__body p {
+  text-align: justify;
+  padding-right: 50px;
+  margin: 20px 0;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+}
+
+.delete__blog {
+  background-color: #f1356d;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* create new blog page */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h1 {
+  font-size: 25px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
   margin: 10px 0;
+  border: none;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  font-size: 18px;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.create button {
+background-color: red;
+ padding: 8px 12px;
+ border-radius: 8px;
+ color: #fff;
+ cursor: pointer;
+ border: 0;
+ outline: none;
+ font-size: 17px;
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+.create button i {
+ margin: 2px;
+}
+
+/* Not found page  */
+.not__found {
+ text-align: center;
+}
+.not__found h2 {
+ margin-bottom: 20px;
+ color: #f1356d;
+ letter-spacing: 0.8px;
+}
+.not__found p {
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+.not__found a {
+  text-decoration: none;
+  color: red;
 }

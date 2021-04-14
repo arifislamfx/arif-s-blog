@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const BlogList = ({ blogs, title}) => { 
 
@@ -7,8 +8,10 @@ const BlogList = ({ blogs, title}) => {
             {
                 blogs.map((blog) => (
                     <div className="blog__preview" key={blog.id}>
-                        <h2> {blog.title} </h2>
+                      <Link to = {`/blogs/${blog.id}`}>
+                      <h2> {blog.title} </h2>
                         <p> Writen by { blog.author } </p>
+                      </Link>
                     </div>
                 ))
             }
@@ -18,4 +21,5 @@ const BlogList = ({ blogs, title}) => {
 
 export default BlogList
 
+// eslint-disable-next-line no-lone-blocks
 {/* <button className="delete" onClick={() => handleDelete(blog.id)}>delete</button>  */}

@@ -50,7 +50,7 @@ const Create = () => {
             >
                 <option value="arif">arif</option>
                 <option value="sumi">sumi</option>
-                <option value="sumi">Unknown User</option>
+                <option value="unknown-user">Unknown User</option>
             </select>
             {!isPending && <button> <i class="fas fa-plus"></i> Add Blog</button>}
             {isPending && <button disabled> <i class="fas fa-plus"></i> Adding Blog...</button>}
